@@ -12,7 +12,7 @@ API_HASH = os.environ.get("API_HASH", "")
 
 OWNER_ID = int(os.environ.get("OWNER_ID", ""))
 DB_URL = os.environ.get("DB_URL", "")
-DB_NAME = os.environ.get("DB_NAME", "madflixbotz")
+DB_NAME = os.environ.get("DB_NAME", "")
 
 
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
@@ -28,8 +28,8 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 
 try:
-    ADMINS=[6848088376]
-    for x in (os.environ.get("ADMINS", "6848088376").split()):
+    ADMINS=[]
+    for x in (os.environ.get("ADMINS", "").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -44,7 +44,7 @@ except ValueError:
 
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 
-PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
+PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "True" else False
 
 DISABLE_CHANNEL_BUTTON = True if os.environ.get('DISABLE_CHANNEL_BUTTON', "True") == "True" else False
 
@@ -95,8 +95,3 @@ def LOGGER(name: str) -> logging.Logger:
 
 
 
-# Jishu Developer 
-# Don't Remove Credit 🥺
-# Telegram Channel @Madflix_Bots
-# Backup Channel @JishuBotz
-# Developer @JishuDeveloper
