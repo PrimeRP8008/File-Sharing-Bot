@@ -5,18 +5,18 @@ from logging.handlers import RotatingFileHandler
 
 
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "8106002966:AAHO_1zE-V_A0zXqdxftIsASiVlyRfouheI")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "8106002966:AAG2b8qOjCIPKYJV-9_97TDL4nVekJ-2r-E")
 API_ID = int(os.environ.get("API_ID", "28421635"))
 API_HASH = os.environ.get("API_HASH", "a4856de5fec0b9b3601ff06425f3f58e")
 
 
-OWNER_ID = int(os.environ.get("OWNER_ID", "6657660775"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "1534632634"))
 DB_URL = os.environ.get("DB_URL", "mongodb+srv://rohitl3031:CNHkZh4Nkgv0mUuJ@cluster0.cgmci.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DB_NAME", "Cluster0")
 
 
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001991806323"))
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001991806323"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002262246598"))
 
 
 FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "600")) # auto delete in seconds
